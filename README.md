@@ -1,4 +1,4 @@
-# Statistics
+# Statistics/Minitab
 The data from the file comes from a clinical study conducted by the 
 pharmaceutical production and packaging factory mentioned. 
 The purpose of the study was to investigate the effectiveness of 2 new antihypertensive 
