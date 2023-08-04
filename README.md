@@ -1,4 +1,4 @@
-# Statistics/Minitab
+# Statistics/Minitab/Python
 The data from the file comes(data.csv) from a clinical study conducted by the 
 pharmaceutical production and packaging factory mentioned. 
 The purpose of the study was to investigate the effectiveness of 2 new antihypertensive 
