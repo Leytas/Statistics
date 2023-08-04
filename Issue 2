@@ -1,1 +1,14 @@
+(Minitab software)
+
 Stat > Basic Statistics > Display Descriptive Statistics. 
+
+Python 
+
+import pandas as pd
+import numpy as np
+# Compute the descriptive statistics
+descriptive_stats = df.describe()
+
+# Display the results
+print(descriptive_stats)
+
