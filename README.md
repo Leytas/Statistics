@@ -1,5 +1,5 @@
 # Statistics/Minitab/Python
-The data comes(file'data.xlsx') from a clinical study conducted by the 
+The data come (file'data.xlsx') from a clinical study conducted by the 
 pharmaceutical production and packaging factory mentioned. 
 The purpose of the study was to investigate the effectiveness of 2 new antihypertensive 
 drugs in reducing systolic blood pressure (mm Hg) recorded after 2 weeks of daily drug intake. 
