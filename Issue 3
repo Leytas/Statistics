@@ -35,7 +35,7 @@ plt.grid()
 plt.show()
 
 # Create individual value plot
-plt.figure(figsize=(8, 5))
+plt.figure(figsize=(8, 6))
 sns.stripplot(data=df, jitter=True, dodge=True, alpha=0.7)
 plt.xlabel("Therapy")
 plt.ylabel("Response")
