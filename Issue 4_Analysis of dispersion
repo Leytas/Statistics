@@ -1,1 +1,27 @@
+# Minitab
 
+Select Stat > ANOVA > One-Way.
+
+If the data is entered in 3 columns (one for each treatment), select 'Response data are in separate column for each factor level,'
+and in the 'Responses' field, input these 3 columns.
+If the data is entered in 1 column, select 'Response data are in one column for all factor levels.' In the 'Responses' field, input
+the column containing response variable values, and in the 'Factor' field, input the column with treatments."
+
+# Python
+
+from scipy.stats import f_oneway
+
+# Perform one-way ANOVA
+anova_result = f_oneway(df["Placebo"], df["drug 1"], df["drug 2"])
+
+# Print ANOVA results
+print("One-Way ANOVA Results:")
+print("F-statistic:", anova_result.statistic)
+print("P-value:", anova_result.pvalue)
+
+# Interpret ANOVA results
+alpha = 0.05
+if anova_result.pvalue < alpha:
+    print("Reject the null hypothesis. There are significant differences between treatment groups.")
+else:
+    print("Fail to reject the null hypothesis. There are no significant differences between treatment groups.")
