@@ -1,2 +1,44 @@
 The appropriate charts for this data analysis are the dot plot and the box plot (box-and-whisker plot), as there are 7 observations for each treatment. 
 
+# Minitab 
+
+For the dot plot, you can create it using the following steps (Minitab):
+
+Go to the "Graph" menu.
+Choose "Individual Value Plot" and then "Simple." and "Box-Plot" and then "Simple."
+Select the response variable (Y-axis) as the column with the values of the response variable (reduction in systolic blood pressure).
+Choose the treatment (drug) variable as the X-axis.
+
+This will generate a dot plot where each dot represents an observation (patient) for each treatment (drug), 
+allowing you to visualize the distribution of the data and compare the effectiveness of the different drugs 
+in reducing systolic blood pressure.
+
+# Python
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Box plot
+plt.figure(figsize=(8, 3))
+sns.boxplot(data=df, orient="h")
+plt.xlabel("Response")
+plt.ylabel("Therapy")
+plt.title("Box Plot - Drug and Placebo Responses")
+plt.grid()
+plt.show()
+
+plt.figure(figsize=(7, 3))
+sns.boxplot(data=df, orient="v")  # Change orient to "v"
+plt.xlabel("Therapy")  
+plt.ylabel("Response")  
+plt.title("Box Plot - Drug and Placebo Responses")
+plt.grid()
+plt.show()
+
+# Create individual value plot
+plt.figure(figsize=(8, 5))
+sns.stripplot(data=df, jitter=True, dodge=True, alpha=0.7)
+plt.xlabel("Therapy")
+plt.ylabel("Response")
+plt.title("Individual Value Plot - Drug Responses")
+plt.grid()
+plt.show()
