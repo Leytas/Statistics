@@ -1,4 +1,4 @@
-Using the Tukey method, identify the pairs of means that differ significantly at significance levels of 5% and 1%.
+Using the Tukey method, identify the pairs of means that differ significantly at significance levels of 5% and 1%
 
 # Minitab 
 In Minitab, select Stat > ANOVA > One – Way > Comparisons. In the Error rate for comparisons field, enter the value 5 
