@@ -1,1 +1,20 @@
 Using the Tukey method, identify the pairs of means that differ significantly at significance levels of 5% and 1%.
+
+# Minitab 
+In Minitab, select Stat > ANOVA > One – Way > Comparisons. In the Error rate for comparisons field, enter the value 5 
+(for significance level 5% ) or the value 1 (for significance level 1%). 
+Finally, choose the Tukey method, and select tests for the results.
+
+# Python 
+
+from scipy.stats import f_oneway
+from statsmodels.stats.multicomp import MultiComparison
+
+# Perform one-way ANOVA
+anova_result = f_oneway(df["Placebo"], df["drug 1"], df["drug 2"])
+
+# Perform Tukey's multiple comparison test
+multicomp = MultiComparison(df.melt()["value"], df.melt()["variable"])
+result = multicomp.tukeyhsd(alpha=0.05)  # Significance level of 1%
+
+print(result)
